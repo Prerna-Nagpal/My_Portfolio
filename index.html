@@ -117,6 +117,7 @@
         /* Main Content */
         .main-content {
             margin-top: 80px;
+            position: relative;
         }
 
         .section {
@@ -150,6 +151,10 @@
             background: linear-gradient(135deg, var(--surface) 0%, #e0e7ff 100%);
             padding: 8rem 0;
             text-align: center;
+            position: relative;
+            /* Add this line */
+            z-index: 1;
+            /* Add this line */
         }
 
         .hero-content {
@@ -240,11 +245,16 @@
         }
 
         /* About Section */
+        .about {
+            margin-top: 2rem;
+        }
+
         .about-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 4rem;
-            align-items: center;
+            align-items: flex-start;
+            /* Change from 'center' to 'flex-start' */
         }
 
         .about-text {
